@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/post/post",
+    "pages/map/map",
+    "pages/alarm/alarm"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "green",
+    "navigationBarTitleText": "唔，有点小害怕",
+    "navigationBarTxetStyle": "black"
+  },
+  "debug": true
+}

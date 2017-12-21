@@ -1,0 +1,16 @@
+<!--start.wxml-->
+<view class="con">
+<button id="btn" bindtap="tapToAlarm">立即警报</button>
+
+<navigator url="../../pages/map/map">
+<picker mode="time"
+start="{{starttime}}"
+end="{{endtime}}"
+value="{{time}}"
+bindchange='selectchange'>
+<button>选择时间</button>
+</picker>
+</navigator>
+<text>{{phoneNumber}}</text>
+<text id="text">提示：当目前温度异常时报警。单位：摄氏度</text>
+</view>

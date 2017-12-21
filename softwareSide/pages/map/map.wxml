@@ -1,0 +1,23 @@
+<map id="theMap" show-location/>
+<button bindtap='moveToLocation'>
+当前位置
+</button>
+<navigator url="../../pages/post/post" redirect="true">
+<button>
+取消保护
+</button>
+</navigator>
+<navigator url='../../pages/alarm/alarm' redirect='true'>
+<button bindtap='tapToAlarm'>
+立即保护
+</button>
+</navigator>
+
+ <!--倒计时  -->  
+      <view class="countDownTimeView countDownAllView" >  
+<!--       <view class="voteText countDownTimeText">{{countDownDay}}天</view>  -->
+        <view class="voteText countDownTimeText">{{countDownHour}}时</view>  
+        <view class="voteText countDownTimeText">{{countDownMinute}}分</view>  
+        <view class="voteText countDownTimeText">{{countDownSecond}}秒</view>  
+      </view>  
+

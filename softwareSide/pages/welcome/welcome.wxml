@@ -1,0 +1,12 @@
+<view class="container">
+<image class="avatar"
+src="/images/avatar/avatar-1.jpg"></image>
+<text class="motto">唔，有点小害怕</text>
+<button catchtap="onTapJump"  disabled ="{{disabled}}" class="journey-container">
+<text class="journey">点击进入</text>
+</button>
+<input id="input" placeholder="请输入手机号码" 
+placeholder-style="font-size:18px;color:#bfbfbf;" 
+style="font-weight:bolder; font-size:30px; color:#000000; padding-left: 30rpx"
+  bindinput="change"/>
+</view>

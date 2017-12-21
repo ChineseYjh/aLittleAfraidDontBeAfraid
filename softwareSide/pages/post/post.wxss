@@ -1,0 +1,29 @@
+
+.con{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+  #btn{
+      height: 88rpx;
+        top: 80%;
+          width: 80%;
+            color: black;
+              background-color: white;
+              margin-top:150rpx;
+
+  }
+
+  #text{
+  color: black;
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+  top: 55%;
+  left: 17%;
+  position: absolute
+  }
+  page{
+    background-color:green;/*第一个欢迎页面的背景颜色*/
+    
+}
