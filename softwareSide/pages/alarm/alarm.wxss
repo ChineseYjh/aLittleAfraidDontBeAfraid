@@ -1,1 +1,29 @@
 /* pages/alarm/alarm.wxss */
+.con{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#text{
+font-size:45rpx;
+    
+    color:black;
+    position: absolute;
+align-self: center;
+border: 1px solid black;
+top:22%;
+margin-left: 50rpx;
+margin-right: 60rpx
+}
+
+
+#btn{
+height:88rpx;
+    top:65%;
+    width:400rpx;
+    color:black;
+    background-color:white;
+    border: 1px solid black;
+position: absolute;
+left:25%
+}

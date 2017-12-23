@@ -3,3 +3,20 @@
 font-size:20rpx;
 position:absolute
 }
+#theMap{
+  height:450rpx
+
+}
+
+#shi{
+text-align:center
+}
+
+
+#fen{
+text-align:center
+}
+
+#miao{
+text-align:center
+}

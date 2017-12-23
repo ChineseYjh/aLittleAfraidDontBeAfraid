@@ -5,25 +5,32 @@
   align-items:center;
 }
 
-  #btn{
+  #btn1{
+    align-items: center;
       height: 88rpx;
-        top: 80%;
-          width: 80%;
+        top:50%;
+          width: 300rpx;
             color: black;
               background-color: white;
-              margin-top:150rpx;
-
+              position: absolute;
+              left:28%
+  }
+  #btn2{
+     align-items:center;
+    height:88rpx;
+    top:30%;
+    width:300rpx;
+    color:black;
+    background-color:white;
+    left:28%;
+position: absolute
   }
 
   #text{
   color: black;
   font-family:PingFangSC-Regular;
-  font-size:12px;
-  top: 55%;
-  left: 17%;
+  font-size:16px;
+  top: 77%;
   position: absolute
   }
-  page{
-    background-color:green;/*第一个欢迎页面的背景颜色*/
-    
-}
+ 

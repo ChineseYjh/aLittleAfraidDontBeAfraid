@@ -2,6 +2,7 @@
 Page({
         data:
         {
+          imageSrc:"../../images/avatar/avatar-8.jpg" ,
           time:'00:00',
           starttime:'00:00',
           endtime:'24:00',
@@ -11,12 +12,14 @@ Page({
         },//跳转到地图页
         selectchange:function(e)
         {
-          console.log(e)
+          var this_=this;
+          console.log(e);
           this.setData(
             {
               time:e.detail.value
             }
-          )
+          );
+          getApp().globalData.Time=this_.data.time;
         },
 
 tapToAlarm:function()
@@ -37,9 +40,9 @@ tapToAlarm:function()
     fail:function(res){
     console.log("fail")
     },
-    complete:function(res){
-    console:log("end")
-    }
+   // complete:function(res){
+    //console:log("end")
+    //}
   });
   wx.request({
     url: "https://api.heclouds.com/devices/20452006/datapoints?type=3",
@@ -51,7 +54,8 @@ tapToAlarm:function()
       latitude:this_.data.latitude,
       longitude:this_.data.longitude,
       //speed:this_.data.speed,
-      phoneNumber:getApp().globalData.phoneNumber
+      phoneNumber:getApp().globalData.phoneNumber,
+      ThisIsAWorkByChineseYjhsTeam : ''
     },
     method:'POST',
     success:function(res)

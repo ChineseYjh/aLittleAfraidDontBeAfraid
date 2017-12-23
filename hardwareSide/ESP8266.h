@@ -87,7 +87,7 @@ class ESP8266 {
      * @retval true - alive.
      * @retval false - dead.
      */
-    bool kick(void);
+    //bool kick(void);
     
     /**
      * Restart ESP8266 by "AT+RST". 
@@ -97,7 +97,7 @@ class ESP8266 {
      * @retval true - success.
      * @retval false - failure.
      */
-    bool restart(void);
+   bool restart(void);
     
     /**
      * Get the version of AT Command Set.  
@@ -114,7 +114,7 @@ class ESP8266 {
      *  @retval false - failure.
      *  @note the feature requires hardware support. 
      */
-    bool deepSleep(uint32_t time);
+//    bool deepSleep(uint32_t time);
     
     /**
      * Switch the echo function.    
@@ -132,7 +132,7 @@ class ESP8266 {
       *  @retval false - failure.  
       *  @note  The operation can lead to restart the machine.  
       */
-    bool restore(void);
+//    bool restore(void);
     
     /**
      * Set up a serial port configuration.  
@@ -143,7 +143,7 @@ class ESP8266 {
      * @retval false - failure. 
      * @note  Only allows baud rate design, for the other parameters:databits- 8,stopbits -1,parity -0,flow control -0 . 
      */
-    bool setUart(uint32_t baudrate,uint8_t pattern);
+  //  bool setUart(uint32_t baudrate,uint8_t pattern);
     
     /**
      * Set operation mode to station. 
@@ -154,14 +154,14 @@ class ESP8266 {
      * @retval false - failure.
      * 
      */
-    bool setOprToStation(uint8_t pattern1=DEFAULT_PATTERN,uint8_t pattern2=DEFAULT_PATTERN);
+ //   bool setOprToStation(uint8_t pattern1=DEFAULT_PATTERN,uint8_t pattern2=DEFAULT_PATTERN);
     
     /**
      * Get the model values list.  
      * 
      * @return the list of model.  
      */ 
-    String getWifiModeList(void);
+ //   String getWifiModeList(void);
     
     /**
      * Set operation mode to softap.  
@@ -171,7 +171,7 @@ class ESP8266 {
      * @retval true - success. 
      * @retval false - failure. 
      */
-    bool setOprToSoftAP(uint8_t pattern1=DEFAULT_PATTERN,uint8_t pattern2=DEFAULT_PATTERN);
+ //   bool setOprToSoftAP(uint8_t pattern1=DEFAULT_PATTERN,uint8_t pattern2=DEFAULT_PATTERN);
    
     /**
      * Set operation mode to station + softap.  
@@ -192,7 +192,7 @@ class ESP8266 {
      * @retval 2 - mode AP. 
      * @retval 3 - mode AP + station. 
      */
-    uint8_t getOprMode(uint8_t pattern1=DEFAULT_PATTERN);
+ //   uint8_t getOprMode(uint8_t pattern1=DEFAULT_PATTERN);
     
     /**
      * Search available AP list and return it.
@@ -201,7 +201,7 @@ class ESP8266 {
      * @note This method will occupy a lot of memeory(hundreds of Bytes to a couple of KBytes). 
      *  Do not call this method unless you must and ensure that your board has enough memery left.
      */
-    String getAPList(void);
+ //   String getAPList(void);
     
     /**
      * Search and returns the current connect AP. 
@@ -209,7 +209,7 @@ class ESP8266 {
      * @param pattern -1, send "AT+CWJAP_DEF?",-2,send "AT+CWJAP_CUR?",-3,send "AT+CWJAP?". 
      * @return the ssid of AP connected now. 
      */ 
-    String getNowConecAp(uint8_t pattern=DEFAULT_PATTERN);
+//    String getNowConecAp(uint8_t pattern=DEFAULT_PATTERN);
     
     /**
      * Join in AP. 
@@ -229,7 +229,7 @@ class ESP8266 {
      * @retval true - success.
      * @retval false - failure.
      */
-    bool leaveAP(void);
+ //   bool leaveAP(void);
     
     /**
      * Set SoftAP parameters. 
@@ -244,7 +244,7 @@ class ESP8266 {
      * @retval false - failure.
      * @note This method should not be called when station mode. 
      */
-    bool setSoftAPParam(String ssid, String pwd, uint8_t chl = 7, uint8_t ecn = 4,uint8_t pattern=DEFAULT_PATTERN);
+//    bool setSoftAPParam(String ssid, String pwd, uint8_t chl = 7, uint8_t ecn = 4,uint8_t pattern=DEFAULT_PATTERN);
     
     /**
      * get SoftAP parameters. 
@@ -252,7 +252,7 @@ class ESP8266 {
      * @param pattern -1 send "AT+CWSAP_DEF?" -2 send "AT+CWSAP_CUR?" -3 send "AT+CWSAP?". 
      * @note This method should not be called when station mode. 
      */
-    String getSoftAPParam(uint8_t pattern=DEFAULT_PATTERN);
+//    String getSoftAPParam(uint8_t pattern=DEFAULT_PATTERN);
     
     /**
      * Get the IP list of devices connected to SoftAP. 
@@ -260,7 +260,7 @@ class ESP8266 {
      * @return the list of IP.
      * @note This method should not be called when station mode. 
      */
-    String getJoinedDeviceIP(void);
+ //   String getJoinedDeviceIP(void);
     
     /**
      * Get the current state of DHCP. 
@@ -269,7 +269,7 @@ class ESP8266 {
      * @return the state of DHCP.
      * 
      */
-    String getDHCP(uint8_t pattern=DEFAULT_PATTERN);
+ //   String getDHCP(uint8_t pattern=DEFAULT_PATTERN);
     
      /**
      * Set the  state of DHCP. 
@@ -279,7 +279,7 @@ class ESP8266 {
      * @retval true - success.
      * @retval false - failure.
      */
-     bool setDHCP(uint8_t mode, uint8_t en, uint8_t pattern=DEFAULT_PATTERN);
+//     bool setDHCP(uint8_t mode, uint8_t en, uint8_t pattern=DEFAULT_PATTERN);
      
      /**
      * make boot automatically connected. 

@@ -1,4 +1,5 @@
-<map id="theMap" show-location/>
+<map id="theMap" show-location
+style="width:{{map_width}}px;height:{{map_height}}px"/>
 <button bindtap='moveToLocation'>
 当前位置
 </button>
@@ -14,10 +15,8 @@
 </navigator>
 
  <!--倒计时  -->  
-      <view class="countDownTimeView countDownAllView" >  
-<!--       <view class="voteText countDownTimeText">{{countDownDay}}天</view>  -->
-        <view class="voteText countDownTimeText">{{countDownHour}}时</view>  
-        <view class="voteText countDownTimeText">{{countDownMinute}}分</view>  
-        <view class="voteText countDownTimeText">{{countDownSecond}}秒</view>  
-      </view>  
-
+ <button bindtap='tapToCount'>开始计时</button>
+<view class="container">
+<text >保护时间: {{clock}}</text>
+<text>{{micro_second}}</text>
+</view>

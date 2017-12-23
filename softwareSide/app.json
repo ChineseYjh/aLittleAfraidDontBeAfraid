@@ -6,7 +6,7 @@
     "pages/alarm/alarm"
   ],
   "window": {
-    "navigationBarBackgroundColor": "green",
+    "navigationBarBackgroundColor": "#00FFFF",
     "navigationBarTitleText": "唔，有点小害怕",
     "navigationBarTxetStyle": "black"
   },

@@ -1,7 +1,10 @@
 <view>
+<image style="width: 400px; height: 500px; margin:0px;" mode="scaleToFill" src="{{imageSrc}}"></image>
+<text id="text">
 我们已经发送信息到“唔 别害怕”--硬件端，报警器已经响起，你的家人已经知道你的位置和号码，请保持冷静，祝你平安！
-</view>
-<navigator url='../../pages/map/map' redirect='true'>
-<button>
+</text>
+<navigator url='../../pages/post/post' redirect='true'>
+<button id="btn">
 好的，我很冷静</button>
 </navigator>
+</view>

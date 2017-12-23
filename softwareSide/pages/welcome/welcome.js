@@ -4,7 +4,8 @@ Page({
     opacity: 0.4,
     disabled: true,
         rule: 'up',
-          phoneNum1:""
+          phoneNum1:"",
+          imageSrc:"../../images/avatar/avatar-7.jpg"
   },
   onTapJump: function (event) {
   wx.redirectTo({    

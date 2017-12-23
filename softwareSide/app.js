@@ -62,6 +62,8 @@
     
   },
   globalData:{
-    phoneNumber:0
+    phoneNumber:'',
+    Time:"00:00",
+    ThisIsAWorkByChineseYjhsTeam:''
   }
 })

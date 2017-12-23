@@ -84,16 +84,17 @@ void setup()        //创建无返回值函数
 
   //EEPROM---------------------
   eeprom_READ();
-
+  
   //初始化mp3模块
   audio_init(DEVICE_TF,MODE_One_END,music_vol);		//初始化mp3模块
+
 
   // u8g.setRot180();  // rotate screen, if required
 }
 
 void loop()            //无返回值Loop函数
 { 
-  int vol=uiStep();	//检测输入动作
+  int vol=uiStep(); //检测输入动作
   //  Serial.print("vol:");
   //  Serial.println(vol);
 

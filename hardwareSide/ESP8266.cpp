@@ -56,11 +56,11 @@ ESP8266::ESP8266(HardwareSerial &uart, uint32_t baud): m_puart(&uart)
 }
 #endif
 
-bool ESP8266::kick(void)
+/*bool ESP8266::kick(void)
 {
     return eAT();
 }
-
+*/
 bool ESP8266::restart(void)
 {
     unsigned long start;
@@ -70,7 +70,7 @@ bool ESP8266::restart(void)
         while (millis() - start < 3000) {
             if (eAT()) {
                 delay(1500); /* Waiting for stable */
-                return true;
+             return true;
             }
             delay(100);
         }
@@ -84,7 +84,7 @@ String ESP8266::getVersion(void)
     eATGMR(version);
     return version;
 }
-
+/*
 bool ESP8266::setEcho(uint8_t mode)
 {
     return eATE(mode);
@@ -143,7 +143,7 @@ bool ESP8266::setOprToSoftAP(uint8_t pattern1,uint8_t pattern2)
         }
     }
 }
-
+*/
 bool ESP8266::setOprToStationSoftAP(uint8_t pattern1,uint8_t pattern2)
 {
     uint8_t mode;
@@ -160,7 +160,7 @@ bool ESP8266::setOprToStationSoftAP(uint8_t pattern1,uint8_t pattern2)
         }
     }
 }
-
+/*
 uint8_t ESP8266::getOprMode(uint8_t pattern1)
 {
 	uint8_t mode;
@@ -185,13 +185,13 @@ String ESP8266::getAPList(void)
     eATCWLAP(list);
     return list;
 }
-
+*/
 bool ESP8266::joinAP(String ssid, String pwd,uint8_t pattern)
 {
     return sATCWJAP(ssid, pwd,pattern);
 }
 
-bool ESP8266::leaveAP(void)
+/*bool ESP8266::leaveAP(void)
 {
     return eATCWQAP();
 }
@@ -227,7 +227,7 @@ bool ESP8266::setDHCP(uint8_t mode, uint8_t en, uint8_t pattern)
 {
     return sATCWDHCP(mode, en, pattern);
 }
-
+*/
 bool ESP8266::setAutoConnect(uint8_t en)
 {
     return eATCWAUTOCONN(en);

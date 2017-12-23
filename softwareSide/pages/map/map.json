@@ -1,4 +1,5 @@
 {
-  "navigationBarBackgroundColor": "#ECC0A8",
-  "backgroundColor": "#ECC0A8" 
+  "navigationBarBackgroundColor": "#00FFFF",
+  "navigationBarTitleText": "唔，有点小害怕",
+  "navigationBarTxetStyle": "black"
 }
